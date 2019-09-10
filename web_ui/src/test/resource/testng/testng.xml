@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+    <test name="rechargeTest">
+        <classes>
+            <class name="code.TestClass"/>
+        </classes>
+    </test> <!-- Test -->
+    <!-- testng参数 -->
+    <!--
+    目前支持的浏览器，请按如下进行配置
+    ie,firefox,chrome
+    -->
+    <parameter name="browserType" value="chrome"></parameter>
+    <!--
+    驱动文件的路径
+    ie:src/test/resources/driver/IEDriverServer.exe
+    chrome：src/test/resources/driver/chromedriver.exe
+      -->
+    <parameter name="dirverPath" value="src/test/resources/driver/chromedriver.exe"></parameter>
+    <!-- selenium的版本 -->
+    <parameter name="seleniumVersion" value="2.x"></parameter>
+    <!-- 浏览器可执行文件 -->
+    <parameter name="browserExePath" value="D:\\Program Files\\Mozilla Firefox\\firefox.exe"></parameter>
+
+</suite> <!-- Suite -->

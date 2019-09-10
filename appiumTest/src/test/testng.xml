@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="appTest" parallel="false">
+    <test name="login">
+        <classes>
+            <class name="test.LoginTest"/>
+        </classes>
+    </test><!-- Test -->
+
+    <!--Appium的一些配置项-->
+    <parameter name="devicesName" value="192.168.56.101:5555"></parameter>
+    <parameter name="platformName" value="Android"></parameter>
+    <parameter name="appPackage" value="com.lemon.lemonban"></parameter>
+    <parameter name="appActivity" value="com.lemon.lemonban.activity.WelcomeActivity"></parameter>
+    <parameter name="appiumUrl" value="http://127.0.0.1:4723/wd/hub"></parameter>
+
+</suite>
